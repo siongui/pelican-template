@@ -90,4 +90,4 @@ Please see UNLICENSE_.
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
 .. _i18n_subsites: https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites
-.. _normalize.css: http://necolas.github.io/normalize.css/
+.. _normalize.css: https://necolas.github.io/normalize.css/
