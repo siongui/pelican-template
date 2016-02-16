@@ -1,14 +1,7 @@
 :slug: index
 :lang: zh
 :status: hidden
-
-
-.. raw:: html
-
-  <aside>
-  <div class="edit-on-github">
-    <a href="https://github.com/siongui/pelican-template/blob/master/content/pages/index.rst">在Github上編輯</a>
-  </div>
-  </aside>
+:summary: 中文 index.html
+:og_image: https://raw.githubusercontent.com/siongui/pelican-template/master/content/extra/yezi.png
 
 中文 index.html

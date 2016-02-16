@@ -115,6 +115,10 @@ References
 
 .. [1] `Deploy Website by Pelican, Travis CI, and GitHub Pages <https://siongui.github.io/2016/01/05/deploy-website-by-pelican-travis-ci-github-pages/>`_
 
+.. [2] JINJA_FILTERS in `Settings — Pelican documentation <http://docs.getpelican.com/en/latest/settings.html>`_
+
+       `Jinja custom filters documentation <http://jinja.pocoo.org/docs/dev/api/#custom-filters>`_
+
 
 .. _Pelican: http://blog.getpelican.com/
 .. _Ubuntu 15.10: http://releases.ubuntu.com/15.10/
