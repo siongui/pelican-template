@@ -8,7 +8,7 @@
     {%- if article.modified -%}
     <time datetime="{{ article.modified.isoformat() }}">
       {{ Gregorian_calendar(article.date) }}
-      (Updated: {{ Gregorian_calendar(article.modified) }})
+      ({{ gettext('Updated', DEFAULT_LANG) }}: {{ Gregorian_calendar(article.modified) }})
     </time>
     {%- else -%}
     <time datetime="{{ article.date.isoformat() }}">

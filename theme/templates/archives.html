@@ -11,7 +11,7 @@
       <dt>
         {{ Gregorian_calendar(article.date) }}
         {% if article.modified -%}
-        (Updated: {{ Gregorian_calendar(article.modified) }})
+        ({{ gettext('Updated', DEFAULT_LANG) }}: {{ Gregorian_calendar(article.modified) }})
         {%- endif -%}
       </dt>
       <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>

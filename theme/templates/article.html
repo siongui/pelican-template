@@ -13,7 +13,7 @@
 <aside>
   {%- if article.modified -%}
   <time datetime="{{ article.modified.isoformat() }}">
-    Updated: {{ Gregorian_calendar(article.modified) }}
+    {{ gettext('Updated', DEFAULT_LANG) }}: {{ Gregorian_calendar(article.modified) }}
   </time>
   {%- else -%}
   <time datetime="{{ article.date.isoformat() }}">
