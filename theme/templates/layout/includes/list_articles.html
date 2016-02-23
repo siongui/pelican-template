@@ -1,4 +1,5 @@
 {% for article in (articles_page.object_list if articles_page else articles) %}
+{%- from 'layout/includes/time.html' import Gregorian_calendar -%}
 <article class="post">
   <header>
     <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
@@ -6,12 +7,12 @@
   <aside class="post-metadata-date">
     {%- if article.modified -%}
     <time datetime="{{ article.modified.isoformat() }}">
-      {{ article.date | strftime('%B %d, %Y') }}
-      (Updated: {{ article.modified | strftime('%B %d, %Y') }})
+      {{ Gregorian_calendar(article.date) }}
+      (Updated: {{ Gregorian_calendar(article.modified) }})
     </time>
     {%- else -%}
     <time datetime="{{ article.date.isoformat() }}">
-      {{ article.date | strftime('%B %d, %Y') }}
+      {{ Gregorian_calendar(article.date) }}
     </time>
     {%- endif -%}
   </aside>

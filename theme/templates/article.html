@@ -13,11 +13,11 @@
 <aside>
   {%- if article.modified -%}
   <time datetime="{{ article.modified.isoformat() }}">
-    Updated: {{ article.modified | strftime('%B %d, %Y') }}
+    Updated: {{ Gregorian_calendar(article.modified) }}
   </time>
   {%- else -%}
   <time datetime="{{ article.date.isoformat() }}">
-    {{ article.date | strftime('%B %d, %Y') }}
+    {{ Gregorian_calendar(article.date) }}
   </time>
   {%- endif -%}
 </aside>

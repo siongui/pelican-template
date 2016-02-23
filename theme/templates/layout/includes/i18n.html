@@ -30,7 +30,7 @@
   {%- endif -%}
 {%- endmacro %}
 
-{% macro lang_code2name(code)  -%}
+{% macro lang_code2name(code) -%}
   {%- if   code == 'en'    -%}   English
   {%- elif code == 'zh'    -%}   中文
   {%- elif code == 'th'    -%}   ไทย
@@ -39,7 +39,7 @@
   {%- else -%}{{ code }}{%- endif -%}
 {%- endmacro %}
 
-{% macro translations_for(writing, SITEURL)  %}
+{% macro translations_for(writing, SITEURL) -%}
   {%- if writing.translations -%}
     <div class="available-translations">
       <span>{{- gettext("Translation(s)", writing.lang) -}}</span>:&nbsp;
@@ -48,4 +48,4 @@
       {%- endfor -%}
     </div>
   {%- endif -%}
-{% endmacro %}
+{%- endmacro %}

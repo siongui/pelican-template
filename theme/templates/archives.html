@@ -9,9 +9,9 @@
   <dl>
     {% for article in dates %}
       <dt>
-        {{ article.date | strftime('%B %d, %Y') }}
+        {{ Gregorian_calendar(article.date) }}
         {% if article.modified -%}
-        (Updated: {{ article.modified | strftime('%B %d, %Y') }})
+        (Updated: {{ Gregorian_calendar(article.modified) }})
         {%- endif -%}
       </dt>
       <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
