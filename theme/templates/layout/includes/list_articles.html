@@ -1,5 +1,4 @@
 {%- from 'layout/includes/time.html' import Gregorian_calendar -%}
-{%- from 'layout/includes/i18n.html' import gettext -%}
 {% for article in (articles_page.object_list if articles_page else articles) %}
 <article class="post">
   <header>
@@ -9,7 +8,7 @@
     {%- if article.modified -%}
     <time datetime="{{ article.modified.isoformat() }}">
       {{ Gregorian_calendar(article.date) }}
-      ({{ gettext('Updated', DEFAULT_LANG) }}: {{ Gregorian_calendar(article.modified) }})
+      ({{ 'Updated'|gettext(DEFAULT_LANG) }}: {{ Gregorian_calendar(article.modified) }})
     </time>
     {%- else -%}
     <time datetime="{{ article.date.isoformat() }}">

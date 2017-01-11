@@ -101,6 +101,36 @@ def hidden_pages_get_page_with_slug_index(hidden_pages):
         if page.slug == "index":
             return page
 
+# custom Jinja2 filter for localizing theme
+def gettext(string, lang):
+    if lang == "en":
+        return string
+    elif lang == "zh":
+        if string == "Archives": return "歸檔"
+        elif string == "Categories": return "分類"
+        elif string == "Category": return "分類"
+        elif string == "Authors": return "作者"
+        elif string == "Author": return "作者"
+        elif string == "Tags": return "標籤"
+        elif string == "Updated": return "更新"
+        elif string == "Translation(s)": return "翻譯"
+        elif string == "Edit on Github": return "在Github上編輯"
+        else: return string
+    elif lang == "th":
+        if string == "Archives": return "สารบรรณ"
+        elif string == "Categories": return "ประเภท"
+        elif string == "Category": return "ประเภท"
+        elif string == "Authors": return "ผู้เขียน"
+        elif string == "Author": return "ผู้เขียน"
+        elif string == "Tags": return "แท็ก"
+        elif string == "Updated": return "การปรับปรุง"
+        elif string == "Translation(s)": return "การแปล"
+        elif string == "Edit on Github": return "แก้ไขที่ Github"
+        else: return string
+    else:
+        return string
+
 JINJA_FILTERS = {
     "hidden_pages_get_page_with_slug_index": hidden_pages_get_page_with_slug_index,
+    "gettext": gettext,
 }
