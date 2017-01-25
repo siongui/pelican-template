@@ -7,6 +7,8 @@ C語言Hello Word
 :summary: C語言的Hello World程式
 :og_image: https://raw.githubusercontent.com/siongui/pelican-template/master/content/extra/yezi.png
 
+.. adsense:: 1
+.. adsense:: 2
 
 .. the following is equivalent to insert <br> in html
 

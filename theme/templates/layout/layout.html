@@ -23,6 +23,7 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ relpath_to_site(DEFAULT_LANG, main_lang) }}/theme/css/style.css">
 </head>
 <body>
+{%- block adsense_page_level -%}{%- endblock -%}
 {% include 'layout/includes/top_nav.html' %}
 {% if GOOGLE_CSE %}<gcse:search></gcse:search>{% endif %}
 {%- block content -%}{%- endblock -%}

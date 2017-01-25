@@ -10,7 +10,7 @@ How to Develope
 
 Development Tool: Pelican_ (static site generator written in Python)
 
-Development Environment: `Ubuntu 15.10`_
+Development Environment: `Ubuntu 16.10`_
 
 
 First-time Setup
@@ -103,6 +103,23 @@ Daily Development
     # open your browser and preview the website at http://localhost:8000/
 
 
+Note for `Google Adsense`_
+++++++++++++++++++++++++++
+
+Edit the following three files to include your code:
+
+- `theme/templates/layout/includes/adsense.html <theme/templates/layout/includes/adsense.html>`_
+- `theme/templates/layout/includes/adsense_page_level.html <theme/templates/layout/includes/adsense_page_level.html>`_
+- `plugins/adsense/adsense.py <plugins/adsense/adsense.py>`_
+
+Add ``:adsense: yes`` to the articles that you want to put ads in. See
+`content/articles/2016/02/16/c-hello-world%en.rst <content/articles/2016/02/16/c-hello-world%en.rst>`_
+for example.
+Or use directive to include ads in articles. See raw file of
+`content/articles/2016/02/16/c-hello-world%zh.rst <content/articles/2016/02/16/c-hello-world%zh.rst>`_
+for example.
+
+
 UNLICENSE
 ---------
 
@@ -121,7 +138,7 @@ References
 
 
 .. _Pelican: http://blog.getpelican.com/
-.. _Ubuntu 15.10: http://releases.ubuntu.com/15.10/
+.. _Ubuntu 16.10: http://releases.ubuntu.com/16.10/
 .. _UNLICENSE: http://unlicense.org/
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
@@ -134,3 +151,4 @@ References
 .. _environment variable: https://docs.travis-ci.com/user/environment-variables/
 .. _personal access token: https://help.github.com/articles/creating-an-access-token-for-command-line-use/
 .. _Travis CI command line client: https://github.com/travis-ci/travis.rb
+.. _Google Adsense: https://www.google.com/search?q=Google+AdSense

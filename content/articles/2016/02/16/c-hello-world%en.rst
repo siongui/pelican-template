@@ -7,6 +7,7 @@ Hello World in C
 :category: C
 :summary: Hello World program in C programming language
 :og_image: https://raw.githubusercontent.com/siongui/pelican-template/master/content/extra/yezi.png
+:adsense: yes
 
 
 .. the following is equivalent to insert <br> in html

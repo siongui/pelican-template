@@ -29,3 +29,9 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Google Custom Search
 #GOOGLE_CSE = '000759460633137666077:43yuu4nvb0c'
+
+# Google Adsense
+#   Remember to modify
+#   theme/templates/layout/includes/adsense.html
+#   theme/templates/layout/includes/adsense_page_level.html
+#GOOGLE_ADSENSE = True

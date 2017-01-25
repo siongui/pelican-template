@@ -57,6 +57,7 @@ THEME = 'theme'
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites',
            'edit_on_github',
+           'adsense',
            'embed_github_repository_file',
            'embed_picasaweb_image']
 
