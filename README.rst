@@ -10,7 +10,7 @@ How to Develope
 
 Development Tool: Pelican_ (static site generator written in Python)
 
-Development Environment: `Ubuntu 16.10`_
+Development Environment: `Ubuntu 17.10`_
 
 
 First-time Setup
@@ -66,27 +66,35 @@ First-time Setup
 Auto-deploy by `Travis CI`_
 ---------------------------
 
-1. Sing up a `Travis CI`_ account. Go to your profile page and enable Travis CI
-   for the repository you want to build. (See `Getting started - Travis CI`_)
+See `GitHub Pages Deployment - Travis CI`_.
 
-2. delete global_ secure_ `environment variable`_ in
-   `.travis.yml <.travis.yml>`_.
+First save your `personal access token`_ in `repository settings`_.
 
-3. Go to your GitHub. Generate a `personal access token`_ in Personal Settings
-   (only **public_repo** privilege is enough).
+For User Pages, the following is sample config:
 
-4. Install `Travis CI command line client`_ to encrypt token:
+.. code-block:: yaml
 
-   .. code-block:: bash
+  deploy:
+    provider: pages
+    repo: USERNAME/USERNAME.github.io
+    target_branch: master
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: output
+    on:
+      branch: master
 
-     $ sudo apt-get install ruby ruby-dev
-     $ sudo gem install travis
+For Project Pages, the following is sample config:
 
-5. encrypt the token and add it to `.travis.yml <.travis.yml>`_:
+.. code-block:: yaml
 
-   .. code-block:: bash
-
-     $ travis encrypt GH_TOKEN=your_token --add -r YOUR_GITHUB_NAME/YOUR_REPO
+  deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: output
+    on:
+      branch: master
 
 
 Daily Development
@@ -138,17 +146,14 @@ References
 
 
 .. _Pelican: http://blog.getpelican.com/
-.. _Ubuntu 16.10: http://releases.ubuntu.com/16.10/
+.. _Ubuntu 17.10: http://releases.ubuntu.com/17.10/
 .. _UNLICENSE: http://unlicense.org/
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
 .. _i18n_subsites: https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites
 .. _normalize.css: https://necolas.github.io/normalize.css/
 .. _Travis CI: https://travis-ci.org/
-.. _Getting started - Travis CI: https://docs.travis-ci.com/user/getting-started/
-.. _global: https://docs.travis-ci.com/user/environment-variables/#Global-Variables
-.. _secure: https://docs.travis-ci.com/user/environment-variables/#Encrypted-Variables
-.. _environment variable: https://docs.travis-ci.com/user/environment-variables/
-.. _personal access token: https://help.github.com/articles/creating-an-access-token-for-command-line-use/
-.. _Travis CI command line client: https://github.com/travis-ci/travis.rb
+.. _GitHub Pages Deployment - Travis CI: https://docs.travis-ci.com/user/deployment/pages/
+.. _personal access token: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+.. _repository settings: https://docs.travis-ci.com/user/environment-variables#Defining-Variables-in-Repository-Settings
 .. _Google Adsense: https://www.google.com/search?q=Google+AdSense

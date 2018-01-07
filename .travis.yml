@@ -17,19 +17,12 @@ install:
 - make download
 script:
 - make publish
-after_success:
-- git config --global user.email "travis@travis-ci.org"
-- git config --global user.name "Travis"
-- git config --global push.default simple
-- echo "Clone USERNAME.github.io..."
-- git clone --depth 1 https://${GH_TOKEN}@github.com/USERNAME/USERNAME.github.io.git > /dev/null
-- cd USERNAME.github.io
-- git rm -rf * > /dev/null
-- cp -r  ../output/* .
-- git add .
-- git status
-- git commit -m "Pushed by Travis CI"
-- git push --quiet
-env:
-  global:
-    secure: YOUR_ENCRYPTED_TOKEN
+deploy:
+  provider: pages
+  repo: USERNAME/USERNAME.github.io
+  target_branch: master
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: output
+  on:
+    branch: master
