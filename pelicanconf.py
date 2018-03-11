@@ -17,6 +17,8 @@ READERS = {'html': None}
 ARTICLE_PATHS = ['articles']
 STATIC_PATHS = ['articles', 'extra', 'code']
 EXTRA_PATH_METADATA = {'extra/robots.txt': {'path': 'robots.txt'},
+                       'extra/manifest.json': {'path': 'manifest.json'},
+                       'extra/sw.js': {'path': 'sw.js'},
                        'extra/yezi.png': {'path': 'favicon.ico'},}
 
 # modify TIMEZONE to your timezone
