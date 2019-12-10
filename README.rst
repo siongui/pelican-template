@@ -10,7 +10,7 @@ How to Develope
 
 Development Tool: Pelican_ (static site generator written in Python)
 
-Development Environment: `Ubuntu 17.10`_
+Development Environment: `Ubuntu 19.10`_
 
 
 First-time Setup
@@ -104,10 +104,8 @@ Daily Development
 
     # start edit and develope
     $ cd ~/dev/YOUR_REPO/
-    # If something changes, re-generate the website:
-    $ make html
-    # start dev server
-    $ make serve
+    # re-generate the website and start dev server
+    $ make devserver
     # open your browser and preview the website at http://localhost:8000/
 
 
@@ -146,7 +144,7 @@ References
 
 
 .. _Pelican: http://blog.getpelican.com/
-.. _Ubuntu 17.10: http://releases.ubuntu.com/17.10/
+.. _Ubuntu 19.10: http://releases.ubuntu.com/19.10/
 .. _UNLICENSE: http://unlicense.org/
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
