@@ -19,10 +19,17 @@ script:
 - make publish
 deploy:
   provider: pages
-  repo: USERNAME/USERNAME.github.io
-  target_branch: master
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: output
   on:
     branch: master
+#deploy:
+#  provider: pages
+#  repo: USERNAME/USERNAME.github.io
+#  target_branch: master
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN
+#  local_dir: output
+#  on:
+#    branch: master
