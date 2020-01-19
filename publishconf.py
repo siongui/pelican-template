@@ -32,6 +32,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Google Adsense
 #   Remember to modify
-#   theme/templates/layout/includes/adsense.html
-#   theme/templates/layout/includes/adsense_page_level.html
+#   theme/templates/layout/includes/adsense_auto_ads.html
 #GOOGLE_ADSENSE = True

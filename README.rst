@@ -114,15 +114,15 @@ Note for `Google Adsense`_
 
 Edit the following three files to include your code:
 
-- `theme/templates/layout/includes/adsense.html <theme/templates/layout/includes/adsense.html>`_
-- `theme/templates/layout/includes/adsense_page_level.html <theme/templates/layout/includes/adsense_page_level.html>`_
+- `theme/templates/layout/includes/adsense_auto_ads.html <theme/templates/layout/includes/adsense_auto_ads.html>`_
 - `plugins/adsense/adsense.py <plugins/adsense/adsense.py>`_
+- `publishconf.py <publishconf.py>`_
 
 Add ``:adsense: yes`` to the articles that you want to put ads in. See
-`content/articles/2016/02/16/c-hello-world%en.rst <content/articles/2016/02/16/c-hello-world%en.rst>`_
+`content/articles/2016/02/16/c-hello-world%en.rst <content/articles/2016/02/16/c-hello-world%25en.rst>`_
 for example.
 Or use directive to include ads in articles. See raw file of
-`content/articles/2016/02/16/c-hello-world%zh.rst <content/articles/2016/02/16/c-hello-world%zh.rst>`_
+`content/articles/2016/02/16/c-hello-world%zh.rst <content/articles/2016/02/16/c-hello-world%25zh.rst>`_
 for example.
 
 
