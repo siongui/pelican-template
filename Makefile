@@ -29,6 +29,8 @@ ifeq ($(RELATIVE), 1)
 	PELICANOPTS += --relative-urls
 endif
 
+default: devserver
+
 help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
