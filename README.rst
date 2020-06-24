@@ -142,6 +142,25 @@ References
 
        `Jinja custom filters documentation <http://jinja.pocoo.org/docs/dev/api/#custom-filters>`_
 
+.. [3] | `website icon on android home screen - Google search <https://www.google.com/search?q=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - DuckDuckGo search <https://duckduckgo.com/?q=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - Ecosia search <https://www.ecosia.org/search?q=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - Qwant search <https://www.qwant.com/?q=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - Bing search <https://www.bing.com/search?q=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - Yahoo search <https://search.yahoo.com/search?p=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - Baidu search <https://www.baidu.com/s?wd=website+icon+on+android+home+screen>`_
+       | `website icon on android home screen - Yandex search <https://www.yandex.com/search/?text=website+icon+on+android+home+screen>`_
+       |
+       | `Tutorial: Home Screen Icons | Responsive Web Design Training Tutorial | Webucator <https://www.webucator.com/tutorial/developing-mobile-websites/home-screen-icons.cfm>`_
+       |
+       | `pwa manifest - Google search <https://www.google.com/search?q=pwa+manifest>`_
+       | `pwa manifest - DuckDuckGo search <https://duckduckgo.com/?q=pwa+manifest>`_
+       | `pwa manifest - Ecosia search <https://www.ecosia.org/search?q=pwa+manifest>`_
+       | `pwa manifest - Qwant search <https://www.qwant.com/?q=pwa+manifest>`_
+       | `pwa manifest - Bing search <https://www.bing.com/search?q=pwa+manifest>`_
+       | `pwa manifest - Yahoo search <https://search.yahoo.com/search?p=pwa+manifest>`_
+       | `pwa manifest - Baidu search <https://www.baidu.com/s?wd=pwa+manifest>`_
+       | `pwa manifest - Yandex search <https://www.yandex.com/search/?text=pwa+manifest>`_
 
 .. _Pelican: http://blog.getpelican.com/
 .. _Ubuntu 19.10: http://releases.ubuntu.com/19.10/
