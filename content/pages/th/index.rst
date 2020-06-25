@@ -1,3 +1,6 @@
+ภาษาไทย index.html
+#####################
+
 :slug: index
 :lang: th
 :status: hidden

@@ -1,3 +1,6 @@
+中文 index.html
+###############
+
 :slug: index
 :lang: zh
 :status: hidden
