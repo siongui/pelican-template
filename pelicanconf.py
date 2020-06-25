@@ -56,7 +56,7 @@ DEFAULT_PAGINATION = False
 
 THEME = 'theme'
 
-# Ubuntu 20.04 cannot use following
+# Python 3.8 cannot use following
 #PLUGIN_PATHS = ['plugins']
 # https://github.com/getpelican/pelican-plugins/issues/645
 PLUGIN_PATHS = ['plugins',
