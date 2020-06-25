@@ -161,6 +161,8 @@ References
        | `pwa manifest - Yahoo search <https://search.yahoo.com/search?p=pwa+manifest>`_
        | `pwa manifest - Baidu search <https://www.baidu.com/s?wd=pwa+manifest>`_
        | `pwa manifest - Yandex search <https://www.yandex.com/search/?text=pwa+manifest>`_
+       |
+       | `WebPageTest - Website Performance and Optimization Test <https://www.webpagetest.org/>`_
 
 .. _Pelican: http://blog.getpelican.com/
 .. _Ubuntu 19.10: http://releases.ubuntu.com/19.10/
