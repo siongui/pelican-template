@@ -10,7 +10,7 @@ How to Develope
 
 Development Tool: Pelican_ (static site generator written in Python)
 
-Development Environment: `Ubuntu 19.10`_
+Development Environment: `Ubuntu 20.04`_
 
 
 First-time Setup
@@ -21,7 +21,7 @@ First-time Setup
    .. code-block:: bash
 
      $ sudo apt-get install git
-     $ sudo apt-get install python-pip
+     $ sudo apt-get install python3-pip
 
 2. Install language packages to add locale (English, Traditional Chinese, and
    Thai in this example):
@@ -46,7 +46,7 @@ First-time Setup
    .. code-block:: bash
 
      $ cd ~/dev/YOUR_REPO/
-     $ sudo pip install -r requirements.txt
+     $ pip3 install -r requirements.txt
 
 5. Install Pelican `i18n_subsites`_ plugin and download `normalize.css`_:
 
@@ -165,7 +165,7 @@ References
        | `WebPageTest - Website Performance and Optimization Test <https://www.webpagetest.org/>`_
 
 .. _Pelican: http://blog.getpelican.com/
-.. _Ubuntu 19.10: http://releases.ubuntu.com/19.10/
+.. _Ubuntu 20.04: http://releases.ubuntu.com/20.04/
 .. _UNLICENSE: http://unlicense.org/
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
