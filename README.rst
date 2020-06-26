@@ -39,6 +39,8 @@ First-time Setup
      $ cd
      $ mkdir dev
      $ cd ~/dev/
+     $ git clone https://github.com/siongui/pelican-template.git --depth=1
+     # or clone with full depth
      $ git clone https://github.com/siongui/pelican-template.git YOUR_REPO
 
 4. Install Python tools:

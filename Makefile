@@ -94,11 +94,5 @@ download:
 	# download normalize.css
 	wget -O $(SCSSDIR)/_normalize801.scss https://necolas.github.io/normalize.css/8.0.1/normalize.css
 
-github_project_page: publish
-	# http://docs.getpelican.com/en/latest/tips.html#publishing-to-github
-	ghp-import $(OUTPUTDIR) -b $(GITHUB_PROJECT_PAGES_BRANCH)
-	@echo "upload to Project Pages ..."
-	git push origin $(GITHUB_PROJECT_PAGES_BRANCH)
 
-
-.PHONY: html help clean regenerate serve serve-global devserver publish download scss github_project_page
+.PHONY: html help clean regenerate serve serve-global devserver publish download scss
