@@ -15,9 +15,6 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 # pelican plugins
 I18N_SUBSITES_DIR=$(PLUGINSDIR)/i18n_subsites
 
-GITHUB_PROJECT_PAGES_BRANCH=gh-pages
-GITHUB_USER_NAME=YOUR_USERNAME
-
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)

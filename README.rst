@@ -2,7 +2,10 @@
 How to Develope
 ===============
 
-.. image:: https://travis-ci.org/USERNAME/REPO.png?branch=master
+.. image:: https://travis-ci.org/siongui/pelican-template.png?branch=master
+    :target: https://travis-ci.org/siongui/pelican-template
+
+.. .. image:: https://travis-ci.org/USERNAME/REPO.png?branch=master
     :target: https://travis-ci.org/USERNAME/REPO
 
 .. See how to add travis ci image from https://raw.githubusercontent.com/demizer/go-rst/master/README.rst
