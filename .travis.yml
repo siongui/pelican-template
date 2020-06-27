@@ -25,6 +25,8 @@ deploy:
   local_dir: output
   on:
     branch: master
+#https://docs.travis-ci.com/user/deployment#examples-of-conditional-deployment
+    python: 3.8
 #deploy:
 #  provider: pages
 #  repo: USERNAME/USERNAME.github.io
