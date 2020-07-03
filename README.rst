@@ -23,17 +23,29 @@ First-time Setup
 
    .. code-block:: bash
 
-     $ sudo apt-get install git
-     $ sudo apt-get install python3-pip
+     $ sudo apt install git
+     $ sudo apt install python3-pip
+
+   From the `answer in Ask Ubuntu <https://askubuntu.com/a/1031733>`_,
+   we can use python-is-python3 and prevent Python 2 from being installed
+   on Ubuntu 20.04
+
+   .. code-block:: bash
+
+     $ sudo apt install python-is-python3
+     $ sudo apt-mark hold python2 python2-minimal python2.7 python2.7-minimal libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
 
 2. Install language packages to add locale (English, Traditional Chinese, and
    Thai in this example):
 
    .. code-block:: bash
 
-     $ sudo apt-get install language-pack-en
-     $ sudo apt-get install language-pack-zh-hant
-     $ sudo apt-get install language-pack-th
+     $ sudo apt install language-pack-en
+     $ sudo apt install language-pack-zh-hant
+     $ sudo apt install language-pack-th
+
+   Or you can install languages in "Settings" -> "Region & Language", which
+   installs more related packages such as fonts for languages.
 
 3. git clone source code:
 
@@ -52,6 +64,9 @@ First-time Setup
 
      $ cd ~/dev/YOUR_REPO/
      $ pip3 install -r requirements.txt
+
+   Note that in `.travis.yml <.travis.yml>`_, pip is actually pip3 if bionic and
+   python 3.8 is set in Travis CI config.
 
 5. Install Pelican `i18n_subsites`_ plugin and download `normalize.css`_:
 
@@ -147,26 +162,10 @@ References
 
        `Jinja custom filters documentation <http://jinja.pocoo.org/docs/dev/api/#custom-filters>`_
 
-.. [3] | `website icon on android home screen - Google search <https://www.google.com/search?q=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - DuckDuckGo search <https://duckduckgo.com/?q=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - Ecosia search <https://www.ecosia.org/search?q=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - Qwant search <https://www.qwant.com/?q=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - Bing search <https://www.bing.com/search?q=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - Yahoo search <https://search.yahoo.com/search?p=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - Baidu search <https://www.baidu.com/s?wd=website+icon+on+android+home+screen>`_
-       | `website icon on android home screen - Yandex search <https://www.yandex.com/search/?text=website+icon+on+android+home+screen>`_
-       |
+.. [3] | Home Screen Icon on Android/iPhone & PWA support
+       | `website icon on android home screen - Google search <https://www.google.com/search?q=website+icon+on+android+home+screen>`_
        | `Tutorial: Home Screen Icons | Responsive Web Design Training Tutorial | Webucator <https://www.webucator.com/tutorial/developing-mobile-websites/home-screen-icons.cfm>`_
-       |
        | `pwa manifest - Google search <https://www.google.com/search?q=pwa+manifest>`_
-       | `pwa manifest - DuckDuckGo search <https://duckduckgo.com/?q=pwa+manifest>`_
-       | `pwa manifest - Ecosia search <https://www.ecosia.org/search?q=pwa+manifest>`_
-       | `pwa manifest - Qwant search <https://www.qwant.com/?q=pwa+manifest>`_
-       | `pwa manifest - Bing search <https://www.bing.com/search?q=pwa+manifest>`_
-       | `pwa manifest - Yahoo search <https://search.yahoo.com/search?p=pwa+manifest>`_
-       | `pwa manifest - Baidu search <https://www.baidu.com/s?wd=pwa+manifest>`_
-       | `pwa manifest - Yandex search <https://www.yandex.com/search/?text=pwa+manifest>`_
-       |
        | `WebPageTest - Website Performance and Optimization Test <https://www.webpagetest.org/>`_
 
 .. _Pelican: http://blog.getpelican.com/
