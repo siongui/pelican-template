@@ -125,7 +125,7 @@ Daily Development
     # start edit and develope
     $ cd ~/dev/YOUR_REPO/
     # re-generate the website and start dev server
-    $ make devserver
+    $ make
     # open your browser and preview the website at http://localhost:8000/
 
 
@@ -177,6 +177,6 @@ References
 .. _normalize.css: https://necolas.github.io/normalize.css/
 .. _Travis CI: https://travis-ci.org/
 .. _GitHub Pages Deployment - Travis CI: https://docs.travis-ci.com/user/deployment/pages/
-.. _personal access token: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+.. _personal access token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 .. _repository settings: https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings
 .. _Google Adsense: https://www.google.com/search?q=Google+AdSense
