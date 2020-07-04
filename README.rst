@@ -5,6 +5,9 @@ How to Develope
 .. image:: https://travis-ci.org/siongui/pelican-template.png?branch=master
     :target: https://travis-ci.org/siongui/pelican-template
 
+.. image:: https://gitlab.com/siongui/pelican-template/badges/master/pipeline.svg
+    :target: https://gitlab.com/siongui/pelican-template/-/commits/master
+
 .. .. image:: https://travis-ci.org/USERNAME/REPO.png?branch=master
     :target: https://travis-ci.org/USERNAME/REPO
 

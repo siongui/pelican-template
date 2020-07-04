@@ -11,7 +11,8 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # no trailing /
-SITEURL = 'https://siongui.github.io/pelican-template'
+SITEURL = '/pelican-template'
+#SITEURL = 'https://siongui.github.io/pelican-template'
 #SITEURL = 'https://USERNAME.github.io'
 RELATIVE_URLS = False
 

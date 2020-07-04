@@ -1,0 +1,25 @@
+# https://hub.docker.com/_/ubuntu
+# The ubuntu:latest tag points to the "latest LTS"
+image: ubuntu:latest
+
+pages:
+  stage: deploy
+  script:
+  # https://stackoverflow.com/a/58072486
+  - apt-get update
+  - apt-get install -y python3-pip
+  - apt-get install -y language-pack-en
+  - apt-get install -y language-pack-zh-hant
+  - apt-get install -y language-pack-th
+  - pip3 install -r requirements.txt
+  - apt-get install -y wget
+  - make download
+  - apt-get install -y python-is-python3
+  - make publish
+  - mv output/ public/
+  - "echo -e 'User-agent: *\nDisallow: /' > public/robots.txt"
+  artifacts:
+    paths:
+    - public/
+  only:
+  - master
