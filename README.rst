@@ -24,7 +24,7 @@ First-time Setup
 
 1. On a fresh/clean installation of Ubuntu, update system first. Otherwise will
    get unable to locate package error.
-   See `this SO answer <https://stackoverflow.com/a/58072486>`_
+   See `this SO answer <https://stackoverflow.com/a/58072486>`_.
 
    .. code-block:: bash
 
@@ -94,6 +94,18 @@ First-time Setup
      $ make scss
 
 
+Daily Development
+-----------------
+
+.. code-block:: bash
+
+    # start edit and develope
+    $ cd ~/dev/YOUR_REPO/
+    # re-generate the website and start dev server
+    $ make
+    # open your browser and preview the website at http://localhost:8000/
+
+
 Auto-deploy by `Travis CI`_
 ---------------------------
 
@@ -128,18 +140,6 @@ For Project Pages, the following is sample config:
       branch: master
 
 
-Daily Development
------------------
-
-.. code-block:: bash
-
-    # start edit and develope
-    $ cd ~/dev/YOUR_REPO/
-    # re-generate the website and start dev server
-    $ make
-    # open your browser and preview the website at http://localhost:8000/
-
-
 Note for `Google Adsense`_
 ++++++++++++++++++++++++++
 
@@ -167,13 +167,10 @@ Please see UNLICENSE_.
 References
 ----------
 
-.. [1] `Deploy Website by Pelican, Travis CI, and GitHub Pages <https://siongui.github.io/2016/01/05/deploy-website-by-pelican-travis-ci-github-pages/>`_
+.. [1] | JINJA_FILTERS in `Settings — Pelican documentation <http://docs.getpelican.com/en/latest/settings.html>`_
+       | `Jinja custom filters documentation <http://jinja.pocoo.org/docs/dev/api/#custom-filters>`_
 
-.. [2] JINJA_FILTERS in `Settings — Pelican documentation <http://docs.getpelican.com/en/latest/settings.html>`_
-
-       `Jinja custom filters documentation <http://jinja.pocoo.org/docs/dev/api/#custom-filters>`_
-
-.. [3] | Home Screen Icon on Android/iPhone & PWA support
+.. [2] | Home Screen Icon on Android/iPhone & PWA support
        | `website icon on android home screen - Google search <https://www.google.com/search?q=website+icon+on+android+home+screen>`_
        | `Tutorial: Home Screen Icons | Responsive Web Design Training Tutorial | Webucator <https://www.webucator.com/tutorial/developing-mobile-websites/home-screen-icons.cfm>`_
        | `pwa manifest - Google search <https://www.google.com/search?q=pwa+manifest>`_
