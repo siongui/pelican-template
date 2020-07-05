@@ -8,9 +8,6 @@ How to Develope
 .. image:: https://gitlab.com/siongui/pelican-template/badges/master/pipeline.svg
     :target: https://gitlab.com/siongui/pelican-template/-/commits/master
 
-.. .. image:: https://travis-ci.org/USERNAME/REPO.svg?branch=master
-    :target: https://travis-ci.org/USERNAME/REPO
-
 .. See how to add travis ci image from https://raw.githubusercontent.com/demizer/go-rst/master/README.rst
    https://github.com/demizer/go-rst/commit/9651ab7b5acc997ea2751845af9f2d6efee825df
 
@@ -184,10 +181,13 @@ Please see UNLICENSE_.
 References
 ----------
 
-.. [1] | JINJA_FILTERS in `Settings — Pelican documentation <http://docs.getpelican.com/en/latest/settings.html>`_
+.. [1] `pelican-edit-url <https://github.com/pmclanahan/pelican-edit-url>`_
+       inspires the *Edit on Github* link.
+
+.. [2] | JINJA_FILTERS in `Settings — Pelican documentation <http://docs.getpelican.com/en/latest/settings.html>`_
        | `Jinja custom filters documentation <http://jinja.pocoo.org/docs/dev/api/#custom-filters>`_
 
-.. [2] | Home Screen Icon on Android/iPhone & PWA support
+.. [3] | Home Screen Icon on Android/iPhone & PWA support
        | `website icon on android home screen - Google search <https://www.google.com/search?q=website+icon+on+android+home+screen>`_
        | `Tutorial: Home Screen Icons | Responsive Web Design Training Tutorial | Webucator <https://www.webucator.com/tutorial/developing-mobile-websites/home-screen-icons.cfm>`_
        | `pwa manifest - Google search <https://www.google.com/search?q=pwa+manifest>`_
