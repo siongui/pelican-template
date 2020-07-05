@@ -24,7 +24,7 @@ First-time Setup
 
 1. On a fresh/clean installation of Ubuntu, update system first. Otherwise will
    get unable to locate package error.
-   See `this SO answer <https://stackoverflow.com/a/58072486>`_.
+   See `this SO answer <https://stackoverflow.com/a/58072486>`__.
 
    .. code-block:: bash
 
@@ -140,8 +140,22 @@ For Project Pages, the following is sample config:
       branch: master
 
 
+Deploy to `GitLab Pages`_ via `GitLab CI/CD`_
+---------------------------------------------
+
+See `.gitlab-ci.yml <.gitlab-ci.yml>`_.
+
+1. Use `Ubuntu image in Docker Hub <https://hub.docker.com/_/ubuntu>`_.
+   The *ubuntu:latest* tag points to the "latest LTS".
+
+2. Need to update Ubuntu first to install Ubuntu packages.
+   See `this SO answer <https://stackoverflow.com/a/58072486>`__.
+
+3. `Travis CI`_ can deploy to another repository, but `GitLab CI/CD`_ cannot.
+
+
 Note for `Google Adsense`_
-++++++++++++++++++++++++++
+--------------------------
 
 Edit the following three files to include your code:
 
@@ -187,4 +201,6 @@ References
 .. _GitHub Pages Deployment - Travis CI: https://docs.travis-ci.com/user/deployment/pages/
 .. _personal access token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 .. _repository settings: https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings
+.. _GitLab Pages: https://docs.gitlab.com/ee/user/project/pages/
+.. _GitLab CI/CD: https://docs.gitlab.com/ee/ci/
 .. _Google Adsense: https://www.google.com/search?q=Google+AdSense
