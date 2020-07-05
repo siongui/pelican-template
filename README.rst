@@ -151,7 +151,10 @@ See `.gitlab-ci.yml <.gitlab-ci.yml>`_.
 2. Need to update Ubuntu first to install Ubuntu packages.
    See `this SO answer <https://stackoverflow.com/a/58072486>`__.
 
-3. `Travis CI`_ can deploy to another repository, but `GitLab CI/CD`_ cannot.
+3. `Travis CI`_ can deploy to any repository, but need `personal access token`_
+   to do so.
+   `GitLab CI/CD`_ can deploy to the repository where CI/CD runs without
+   credentials.
 
 
 Note for `Google Adsense`_
@@ -190,9 +193,9 @@ References
        | `pwa manifest - Google search <https://www.google.com/search?q=pwa+manifest>`_
        | `WebPageTest - Website Performance and Optimization Test <https://www.webpagetest.org/>`_
 
-.. _Pelican: http://blog.getpelican.com/
+
+.. _Pelican: https://blog.getpelican.com/
 .. _Ubuntu 20.04: http://releases.ubuntu.com/20.04/
-.. _UNLICENSE: http://unlicense.org/
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
 .. _i18n_subsites: https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites
@@ -204,3 +207,4 @@ References
 .. _GitLab Pages: https://docs.gitlab.com/ee/user/project/pages/
 .. _GitLab CI/CD: https://docs.gitlab.com/ee/ci/
 .. _Google Adsense: https://www.google.com/search?q=Google+AdSense
+.. _UNLICENSE: https://unlicense.org/
