@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+  <title>Tags - YOUR SITE NAME</title>
+  <meta name="keywords" content="YOUR META KEYWORDS"/>
+  <meta name="description" content="YOUR META DESCRIPTION"/>
+  <meta name="author" content="YOUR NAME"/>    <meta property="og:image" content="/pelican-template/./extra/Dharma_wheel.svg" /><meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="/pelican-template/./extra/Dharma_wheel.png" />
+  <!-- manifest.webmanifest or manifest.json ? -->
+  <link rel="manifest" href="/pelican-template/manifest.json" />
+
+  <link rel="stylesheet" type="text/css" href="/pelican-template/./theme/css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item" href="/pelican-template/">YOUR SITE NAME</a>
+  </div>
+
+  <label for="menu-toggle" class="nav-toggle">&equiv;</label>
+  <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+
+  <div class="nav-right nav-menu">
+<a class="nav-item" href="/pelican-template/pages/about.html">About</a>
+    <a class="nav-item" href="/pelican-template/archives.html">Archives</a>
+    <a class="nav-item" href="/pelican-template/categories.html">Categories</a>
+    <a class="nav-item" href="/pelican-template/tags.html">Tags</a>
+    <a class="nav-item" href="/pelican-template/authors.html">Authors</a>
+    <!--TODO: add links for Links(optional), and RSS -->
+
+    <span class="vertical-divider"></span>
+
+        <a class="nav-item" href="/pelican-template/zh/">中文</a>
+        <a class="nav-item" href="/pelican-template/th/">ไทย</a>
+  </div>
+</nav><section class="tags">
+  <header>
+    <h3 title="Tags">Tags</h3>
+  </header>
+
+  <ul>
+      <li title="C">
+        <a href="/pelican-template/tag/c.html">
+          <span>C</span>
+          <span class="badge">1</span>
+        </a>
+      </li>
+      <li title="Makefile">
+        <a href="/pelican-template/tag/makefile.html">
+          <span>Makefile</span>
+          <span class="badge">1</span>
+        </a>
+      </li>
+  </ul>
+</section>
+<div class="layout-footer">Powered by
+  <a href="https://pages.github.com/">Github Pages</a>,
+  <a href="http://blog.getpelican.com/">Pelican</a>,
+  <a href="https://github.com/Kronuz/pyScss">pyScss</a>.
+</div><script>
+navigator.serviceWorker && navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  console.log('Excellent, registered with scope: ', registration.scope);
+});
+</script></body>
+</html>

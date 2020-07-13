@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta charset="utf-8">
+  <title>C語言Hello Word</title>
+  <meta name="keywords" content="C,Makefile"/>
+  <meta name="description" content="C語言的Hello World程式"/>
+  <meta name="author" content="您的姓名"/><meta property="og:title" content="C語言Hello Word" /><meta property="og:image" content="https://raw.githubusercontent.com/siongui/pelican-template/master/content/extra/yezi.png" />
+<meta property="og:description" content="C語言的Hello World程式" /><meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="/pelican-template/zh/../extra/Dharma_wheel.png" />
+  <!-- manifest.webmanifest or manifest.json ? -->
+  <link rel="manifest" href="/pelican-template/zh/manifest.json" />
+
+  <link rel="stylesheet" type="text/css" href="/pelican-template/zh/../theme/css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item" href="/pelican-template/zh/">您的中文站名</a>
+  </div>
+
+  <label for="menu-toggle" class="nav-toggle">&equiv;</label>
+  <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+
+  <div class="nav-right nav-menu">
+<a class="nav-item" href="/pelican-template/zh/pages/about.html">關於</a>
+    <a class="nav-item" href="/pelican-template/zh/archives.html">歸檔</a>
+    <a class="nav-item" href="/pelican-template/zh/categories.html">分類</a>
+    <a class="nav-item" href="/pelican-template/zh/tags.html">標籤</a>
+    <a class="nav-item" href="/pelican-template/zh/authors.html">作者</a>
+    <!--TODO: add links for Links(optional), and RSS -->
+
+    <span class="vertical-divider"></span>
+
+        <a class="nav-item" href="/pelican-template/">English</a>
+        <a class="nav-item" href="/pelican-template/th/">ไทย</a>
+  </div>
+</nav><main role="main" class="article">
+  <article>
+    <header>
+      <h1>
+        <a href="/pelican-template/zh/2016/02/16/c-hello-world/"
+           rel="bookmark"
+           title="Permalink to C語言Hello Word">
+          C語言Hello Word
+        </a>
+      </h1>
+    </header>
+<aside><time datetime="2016-02-16T04:37:00+08:00">
+    二月 16, 2016
+  </time></aside>
+    <aside><div class="available-translations">
+      <span>翻譯</span>:&nbsp;<a href="/pelican-template/zh/../2016/02/16/c-hello-world/">English</a>&nbsp;<a href="/pelican-template/zh/../th/2016/02/16/c-hello-world/">ไทย</a>&nbsp;</div><div class="edit-on-github"><a href="https://github.com/USERNAME/REPO/tree/master/content/articles/2016/02/16/c-hello-world%25zh.rst">在Github上編輯</a></div></aside>
+    <hr>
+
+    <div class="main-content">
+<!-- insert your 1st ad code here. Or leave it as it is. -->
+
+<!-- insert your 2nd ad code here. Or leave it as it is. -->
+<!-- the following is equivalent to insert <br> in html -->
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="github-file">
+            <figcaption>
+              <a href="https://github.com/siongui/pelican-template/blob/master/content/code/c-hello-world/hello.c">hello.c</a> |
+              <a href="https://github.com/siongui/pelican-template">repository</a> |
+              <a href="https://raw.githubusercontent.com/siongui/pelican-template/master/content/code/c-hello-world/hello.c">view raw</a>
+            </figcaption><div class="code-file">
+            <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">char</span> <span class="o">*</span><span class="n">envp</span><span class="p">[])</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;hello world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div></figure><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="github-file">
+            <figcaption>
+              <a href="https://github.com/siongui/pelican-template/blob/master/content/code/c-hello-world/Makefile">Makefile</a> |
+              <a href="https://github.com/siongui/pelican-template">repository</a> |
+              <a href="https://raw.githubusercontent.com/siongui/pelican-template/master/content/code/c-hello-world/Makefile">view raw</a>
+            </figcaption><div class="code-file">
+            <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">CC</span><span class="o">=</span>gcc
+
+<span class="nf">hello</span><span class="o">:</span> <span class="n">hello</span>.<span class="n">c</span>
+	<span class="k">$(</span>CC<span class="k">)</span> -o hello hello.c
+
+<span class="nf">clean</span><span class="o">:</span>
+	rm hello
+</pre></div>
+</td></tr></table></div></figure></div>
+
+    <footer><hr><address><b>作者</b>:
+    <a rel="author"
+       href="/pelican-template/zh/author/nin-de-xing-ming.html">您的姓名</a>
+  </address><aside>
+    <i>&isin;</i> <b>分類</b>:
+    <a href="/pelican-template/zh/category/c.html">C</a>
+  </aside><aside>
+    <i>&sum;</i> <b>標籤</b>:
+      <a href="/pelican-template/zh/tag/c.html">C</a>
+,       <a href="/pelican-template/zh/tag/makefile.html">Makefile</a>
+  </aside></footer>
+  </article>
+</main>
+<div class="layout-footer">Powered by
+  <a href="https://pages.github.com/">Github Pages</a>,
+  <a href="http://blog.getpelican.com/">Pelican</a>,
+  <a href="https://github.com/Kronuz/pyScss">pyScss</a>.
+</div><script>
+navigator.serviceWorker && navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  console.log('Excellent, registered with scope: ', registration.scope);
+});
+</script></body>
+</html>
