@@ -2,11 +2,26 @@
 How to Develope
 ===============
 
+.. image:: https://img.shields.io/badge/Language-Python-blue.svg
+   :target: https://www.python.org/
+
+.. image:: https://img.shields.io/badge/Language-Go-blue.svg
+   :target: https://golang.org/
+
+.. .. image:: https://godoc.org/github.com/siongui/paligo?status.svg
+   :target: https://godoc.org/github.com/siongui/paligo
+
 .. image:: https://travis-ci.org/siongui/pelican-template.svg?branch=master
     :target: https://travis-ci.org/siongui/pelican-template
 
 .. image:: https://gitlab.com/siongui/pelican-template/badges/master/pipeline.svg
     :target: https://gitlab.com/siongui/pelican-template/-/commits/master
+
+.. .. image:: https://goreportcard.com/badge/github.com/siongui/paligo
+   :target: https://goreportcard.com/report/github.com/siongui/paligo
+
+.. image:: https://img.shields.io/badge/license-Unlicense-blue.svg
+   :target: https://github.com/siongui/pelican-template/blob/master/UNLICENSE
 
 .. See how to add travis ci image from https://raw.githubusercontent.com/demizer/go-rst/master/README.rst
    https://github.com/demizer/go-rst/commit/9651ab7b5acc997ea2751845af9f2d6efee825df
