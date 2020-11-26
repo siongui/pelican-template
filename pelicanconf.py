@@ -137,3 +137,10 @@ JINJA_FILTERS = {
     "hidden_pages_get_page_with_slug_index": hidden_pages_get_page_with_slug_index,
     "gettext": gettext,
 }
+
+
+# Google search: pelican jinja2 current date
+# https://bernhard.scheirle.de/posts/2016/February/29/how-to-keep-your-copyright-year-up-to-date-using-jinja-filters/
+# https://stackoverflow.com/questions/20766692/print-the-last-modification-of-a-jinja2-template-in-pelican
+from datetime import datetime
+BUILD_TIME = datetime.now()
