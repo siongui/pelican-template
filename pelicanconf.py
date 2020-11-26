@@ -142,5 +142,7 @@ JINJA_FILTERS = {
 # Google search: pelican jinja2 current date
 # https://bernhard.scheirle.de/posts/2016/February/29/how-to-keep-your-copyright-year-up-to-date-using-jinja-filters/
 # https://stackoverflow.com/questions/20766692/print-the-last-modification-of-a-jinja2-template-in-pelican
+# https://stackoverflow.com/a/16660476
 from datetime import datetime
-BUILD_TIME = datetime.now()
+import pytz
+BUILD_TIME = datetime.now(pytz.timezone(TIMEZONE))
