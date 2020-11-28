@@ -11,7 +11,10 @@ How to Develope
 .. .. image:: https://godoc.org/github.com/siongui/paligo?status.svg
    :target: https://godoc.org/github.com/siongui/paligo
 
-.. image:: https://travis-ci.org/siongui/pelican-template.svg?branch=master
+.. image:: https://github.com/siongui/pelican-template/workflows/Pelican%20site%20CI/badge.svg
+    :target: https://github.com/siongui/pelican-template/blob/master/.github/workflows/pelican.yml
+
+.. .. image:: https://travis-ci.org/siongui/pelican-template.svg?branch=master
     :target: https://travis-ci.org/siongui/pelican-template
 
 .. image:: https://gitlab.com/siongui/pelican-template/badges/master/pipeline.svg
